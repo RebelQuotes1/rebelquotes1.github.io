@@ -1,62 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Rough Grit - Home</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      color: #fff;
-      background: url('images/home_background.png') no-repeat center center fixed;
-      background-size: cover;
-    }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.55);
-      padding: 240px 20px 100px 20px;
-      text-align: center;
-    }
-    nav {
-      margin-top: 20px;
-    }
-    nav a {
-      color: #0f0;
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 18px;
-    }
-    .quote-box {
-      margin-top: 60px;
-      font-style: italic;
-      color: #ccc;
-    }
-  </style>
-  <script>
-    const messages = [
-      "Survival is earned, not given.",
-      "Carry duct tape. It’s not a joke.",
-      "Grit means pushing forward with a busted compass.",
-      "You won't rise when chaos hits unless you've crawled through hell first.",
-      "Cold? Stuff your clothes with dry leaves. It works."
-    ];
-    window.onload = () => {
-      const box = document.getElementById('quote-box');
-      box.innerText = messages[Math.floor(Math.random() * messages.length)];
-    };
-  </script>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <div class="overlay">
-    <h1 style="font-size: 40px; margin-bottom: 10px;">Welcome to Rough Grit</h1>
-    <p style="font-size: 18px;">Rough Gear for Rougher Times</p>
+    <h1>Welcome to Rough Grit</h1>
+    <p>Rough Gear for Rougher Times</p>
     <nav>
       <a href="blog.html">Blog</a>
       <a href="tips.html">Survival Tips</a>
       <a href="grit-test.html">Grit Test</a>
       <a href="gear.html">Gear</a>
     </nav>
-    <div id="quote-box" class="quote-box">Loading tip...</div>
+    <p class="quote">Cold? Stuff your clothes with dry leaves. It works.</p>
   </div>
 </body>
 </html>

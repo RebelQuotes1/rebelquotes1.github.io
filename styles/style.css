@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  background: #333;
+  background-size: cover;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 200px 100px 100px;
+  text-align: center;
+}
+nav {
+  margin: 10px;
+}
+a {
+  color: lime;
+  font-weight: bold;
+  margin: 0 10px;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.quote {
+  margin-top: 40px;
+  font-style: italic;
+  font-size: 14px;
+}
