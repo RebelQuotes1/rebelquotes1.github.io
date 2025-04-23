@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Grit Test</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      background: #111;
+      text-align: center;
+      padding-top: 100px;
+    }
+    button {
+      padding: 20px 40px;
+      font-size: 20px;
+      background-color: #0f0;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 40px;
+      font-size: 22px;
+      color: #ccc;
+    }
+  </style>
+  <script>
+    const results = [
+      "You thought MREs were a rap group. You're done.",
+      "You bartered your last match for a vape cart.",
+      "You screamed 'Alexa, help' and a wild boar came. He wasn’t feelin’ it.",
+      "You asked a survivalist if they take Venmo. They took your boots instead.",
+      "You brought oat milk to a bug-out bunker. You didn’t make it."
+    ];
+    function showResult() {
+      const result = document.getElementById("result");
+      result.innerText = results[Math.floor(Math.random() * results.length)];
+    }
+  </script>
+</head>
+<body>
+  <h1>Take the Grit Test</h1>
+  <button onclick="showResult()">Get Your Result</button>
+  <div id="result"></div>
+  <p><a href="index.html" style="color: #0f0;">← Back to Home</a></p>
+</body>
+</html>
