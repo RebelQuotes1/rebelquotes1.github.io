@@ -72,10 +72,10 @@
     <h1>Welcome to Rough Grit</h1>
     <h2>Rough Gear for Rougher Times</h2>
     <div class="nav">
-      <a rel="noopener noreferrer" target="_blank" href="blog.html">Blog</a>
-      <a rel="noopener noreferrer" target="_blank" href="tips.html">Survival Tips</a>
-      <a rel="noopener noreferrer" target="_blank" href="grit-test.html">Grit Test</a>
-      <a rel="noopener noreferrer" target="_blank" href="gear.html">Gear</a>
+      <a href="blog.html">Blog</a>
+      <a href="tips.html">Survival Tips</a>
+      <a href="grit-test.html">Grit Test</a>
+      <a href="gear.html">Gear</a>
     </div>
     <p class="quote">Cold? Stuff your clothes with dry leaves. It works.</p>
     <p class="tip" id="tip"></p>
@@ -130,7 +130,7 @@
     document.getElementById("tip").innerText = tips[Math.floor(Math.random() * tips.length)];
 
     const gear = gearItems[Math.floor(Math.random() * gearItems.length)];
-    document.getElementById("gear").innerHTML = `<strong>🔥 Featured Gear:</strong> ${gear.name} – ${gear.description} <br><a rel="noopener noreferrer" target="_blank" href="${gear.url}" target="_blank" class="gear-link">Check Price</a>`;
+    document.getElementById("gear").innerHTML = `<strong>🔥 Featured Gear:</strong> ${gear.name} – ${gear.description} <br><a href="${gear.url}" rel="noopener noreferrer" target="_blank" class="gear-link">Check Price</a>`;
   </script>
 </body>
 </html>
