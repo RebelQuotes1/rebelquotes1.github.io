@@ -14,7 +14,6 @@
       color: #fff;
       text-align: center;
     }
-
     .overlay {
       background-color: rgba(0, 0, 0, 0.6);
       padding: 100px 20px;
@@ -23,17 +22,8 @@
       flex-direction: column;
       justify-content: center;
     }
-
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.2em;
-    }
-
-    h2 {
-      font-weight: normal;
-      margin-bottom: 1em;
-    }
-
+    h1 { font-size: 2.5em; margin-bottom: 0.2em; }
+    h2 { font-weight: normal; margin-bottom: 1em; }
     .nav a {
       color: #00ff00;
       margin: 0 15px;
@@ -41,30 +31,15 @@
       text-decoration: none;
       transition: 0.3s;
     }
-
-    .nav a:hover {
-      text-shadow: 0 0 10px #00ff00;
-    }
-
-    .quote, .tip, .gear {
-      font-style: italic;
-      margin-top: 20px;
-    }
-
-    footer {
-      margin-top: 60px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-
+    .nav a:hover { text-shadow: 0 0 10px #00ff00; }
+    .quote, .tip, .gear { font-style: italic; margin-top: 20px; }
+    footer { margin-top: 60px; font-size: 0.9em; color: #aaa; }
     a.gear-link {
       color: #00ff00;
       font-weight: bold;
       text-decoration: underline;
     }
-    a.gear-link:hover {
-      text-shadow: 0 0 8px #00ff00;
-    }
+    a.gear-link:hover { text-shadow: 0 0 8px #00ff00; }
   </style>
 </head>
 <body>
@@ -84,7 +59,6 @@
       © 2025 Rough Grit | Christopher Serpico
     </footer>
   </div>
-
   <script>
     const tips = [
       "Duct tape fixes everything. Even your morale.",
@@ -98,7 +72,6 @@
       "No one regrets carrying extra water.",
       "The loudest person in the woods is the first to die."
     ];
-
     const gearItems = [
       {
         name: "Titan SurvivorCord Paracord",
@@ -126,9 +99,7 @@
         url: "https://amzn.to/3UuUJeJ"
       }
     ];
-
     document.getElementById("tip").innerText = tips[Math.floor(Math.random() * tips.length)];
-
     const gear = gearItems[Math.floor(Math.random() * gearItems.length)];
     document.getElementById("gear").innerHTML = `<strong>🔥 Featured Gear:</strong> ${gear.name} – ${gear.description} <br><a href="${gear.url}" rel="noopener noreferrer" target="_blank" class="gear-link">Check Price</a>`;
   </script>
