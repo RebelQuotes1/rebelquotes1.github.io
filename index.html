@@ -46,9 +46,9 @@
       text-shadow: 0 0 10px #00ff00;
     }
 
-    .quote {
+    .quote, .tip {
       font-style: italic;
-      margin-top: 40px;
+      margin-top: 20px;
     }
 
     footer {
@@ -69,9 +69,27 @@
       <a href="gear.html">Gear</a>
     </div>
     <p class="quote">Cold? Stuff your clothes with dry leaves. It works.</p>
+    <p class="tip" id="tip"></p>
     <footer>
       © 2025 Rough Grit | Christopher Serpico
     </footer>
   </div>
+
+  <script>
+    const tips = [
+      "Duct tape fixes everything. Even your morale.",
+      "Dry socks are a survival item. Change them often.",
+      "Two is one, one is none. Always have backups.",
+      "Zip ties are your best friend after society collapses.",
+      "Pine sap makes a solid fire starter.",
+      "Stay hidden. The best fight is the one you avoid.",
+      "Caffeine pills beat coffee when you're on the run.",
+      "Toilet paper is gold. Don't waste it.",
+      "No one regrets carrying extra water.",
+      "The loudest person in the woods is the first to die."
+    ];
+
+    document.getElementById("tip").innerText = tips[Math.floor(Math.random() * tips.length)];
+  </script>
 </body>
 </html>
