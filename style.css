@@ -1,37 +1,47 @@
 
 body {
-    background: #1a1a1a;
-    color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    background: url('images/home_background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
     text-align: center;
-    padding: 2rem;
 }
-.container {
-    background: #333;
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
     padding: 2rem;
+    max-width: 400px;
+    margin-top: 10vh;
     border-radius: 10px;
-    display: inline-block;
 }
+
 .button {
     display: block;
-    margin: 1rem auto;
-    padding: 1rem;
     background: #28a745;
     color: white;
+    padding: 1em;
+    margin: 1em auto;
     text-decoration: none;
-    width: 200px;
+    width: 70%;
     border-radius: 5px;
+    font-weight: bold;
 }
+
 .button:hover {
     background: #218838;
 }
+
 .quote {
-    margin-top: 2rem;
     font-style: italic;
-    color: #ccc;
+    font-size: 0.9em;
+    margin-top: 1em;
 }
-footer {
-    margin-top: 1rem;
-    font-size: 0.8rem;
-    color: #777;
+
+.footer {
+    margin-top: 2em;
+    font-size: 0.8em;
+    color: #ccc;
 }
