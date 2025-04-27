@@ -1,52 +1,71 @@
 
 body {
-    margin: 0;
-    background: url('images/home_background.png') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff;
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  padding: 0;
+  background: #1a1a1a url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .overlay {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 400px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 20px;
 }
 
 h1 {
-    margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .button {
-    display: block;
-    background: #228B22;
-    color: white;
-    padding: 1rem;
-    margin: 1rem auto;
-    width: 80%;
-    border-radius: 5px;
-    text-decoration: none;
+  background: #28a745;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 .button:hover {
-    background: #1a661a;
+  background: #1f7a33;
 }
 
 .quote {
-    margin-top: 1rem;
-    font-style: italic;
-    color: #ccc;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  color: #bbb;
 }
 
 footer {
-    margin-top: 1.5rem;
-    font-size: 0.8rem;
-    color: #aaa;
+  margin-top: 2rem;
+  font-size: 0.7rem;
+  color: #777;
 }
