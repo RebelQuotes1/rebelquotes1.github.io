@@ -1,47 +1,52 @@
 
 body {
     margin: 0;
-    height: 100vh;
     background: url('images/home_background.png') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
     text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay {
     background: rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
     padding: 2rem;
-    max-width: 400px;
-    margin-top: 10vh;
     border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
 }
 
 .button {
     display: block;
-    background: #28a745;
+    background: #228B22;
     color: white;
-    padding: 1em;
-    margin: 1em auto;
-    text-decoration: none;
-    width: 70%;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 80%;
     border-radius: 5px;
-    font-weight: bold;
+    text-decoration: none;
 }
 
 .button:hover {
-    background: #218838;
+    background: #1a661a;
 }
 
 .quote {
+    margin-top: 1rem;
     font-style: italic;
-    font-size: 0.9em;
-    margin-top: 1em;
+    color: #ccc;
 }
 
-.footer {
-    margin-top: 2em;
-    font-size: 0.8em;
-    color: #ccc;
+footer {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: #aaa;
 }
