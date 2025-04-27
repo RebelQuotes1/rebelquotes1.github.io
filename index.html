@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,27 +12,57 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: url('home_background.png') no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
+      color: #ffffff;
       text-align: center;
-    }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.5);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       padding: 20px;
     }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 10px;
+    }
     h1 {
-      font-size: 2.5em;
+      font-size: 3em;
       margin-bottom: 0.5em;
+      text-shadow: 2px 2px 5px black;
     }
     h2 {
       font-weight: normal;
       margin-bottom: 1em;
+      text-shadow: 1px 1px 3px black;
+    }
+    .buttons {
+      margin: 20px 0;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      background-color: #006400;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: background-color 0.3s;
+    }
+    .buttons a:hover {
+      background-color: #228B22;
+    }
+    .quote {
+      margin-top: 20px;
+      font-size: 1.2em;
+      font-style: italic;
+      color: #ccc;
+      text-shadow: 1px 1px 2px black;
     }
     footer {
-      margin-top: 60px;
+      margin-top: 40px;
       font-size: 0.9em;
       color: #aaa;
     }
@@ -41,7 +72,12 @@
   <div class="overlay">
     <h1>Welcome to Rough Grit</h1>
     <h2>Rough Gear for Rougher Times</h2>
-    <p>Sometimes the fear won't go away, so we'll have to do it afraid.</p>
+    <div class="buttons">
+      <a href="gear.html">Shop Gear</a>
+      <a href="tips.html">Survival Tips</a>
+      <a href="grit-test.html">Grit Test</a>
+    </div>
+    <div class="quote">Sometimes the fear won't go away, so we'll have to do it afraid.</div>
     <footer>© 2025 Christopher Serpico</footer>
   </div>
 </body>
