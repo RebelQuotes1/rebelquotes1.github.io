@@ -2,99 +2,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rough Grit - Home</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('home_background.png') no-repeat center center fixed;
-      background-size: cover;
-      color: #ffffff;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
-    .overlay {
-      background: rgba(0, 0, 0, 0.4);
-      padding: 30px;
-      border-radius: 10px;
-      width: 90%;
-      max-width: 600px;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin: 0.5em 0;
-      text-shadow: 2px 2px 5px black;
-    }
-    h2 {
-      font-size: 1.3em;
-      margin-bottom: 1em;
-      text-shadow: 1px 1px 3px black;
-    }
-    .button-container {
-      margin: 20px 0;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    .button-container a {
-      background: #228B22;
-      color: white;
-      padding: 12px 25px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      font-size: 1.2em;
-      transition: background 0.3s;
-    }
-    .button-container a:hover {
-      background: #006400;
-    }
-    .quote {
-      margin-top: 30px;
-      font-style: italic;
-      font-size: 1.1em;
-      color: #ccc;
-      text-shadow: 1px 1px 2px black;
-    }
-    footer {
-      margin-top: 50px;
-      font-size: 0.8em;
-      color: #aaa;
-    }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2em;
-      }
-      h2 {
-        font-size: 1.1em;
-      }
-      .button-container a {
-        font-size: 1em;
-      }
-      .quote {
-        font-size: 1em;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rough Grit - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="overlay">
-    <h1>Welcome to Rough Grit</h1>
-    <h2>Rough Gear for Rougher Times</h2>
-    <div class="button-container">
-      <a href="gear.html">Shop Gear</a>
-      <a href="tips.html">Survival Tips</a>
-      <a href="grit-test.html">Grit Test</a>
+    <div class="container">
+        <h1>Welcome to Rough Grit</h1>
+        <p>Rough Gear for Rougher Times</p>
+        <a href="shop.html" class="button">Shop Gear</a>
+        <a href="tips.html" class="button">Survival Tips</a>
+        <a href="grit-test.html" class="button">Grit Test</a>
+        <p class="quote">Sometimes the fear won't go away, so we'll have to do it afraid.</p>
+        <footer>© 2025 Christopher Serpico</footer>
     </div>
-    <div class="quote">Sometimes the fear won't go away, so we'll have to do it afraid.</div>
-    <footer>© 2025 Christopher Serpico</footer>
-  </div>
 </body>
 </html>
