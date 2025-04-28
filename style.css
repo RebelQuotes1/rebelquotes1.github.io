@@ -1,74 +1,60 @@
-
 body {
-  margin: 0;
-  padding: 0;
-  background: url('images/background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  font-family: Arial, sans-serif;
-  color: #fff;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    background: #0e0e0e;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 30px;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 500px;
+    text-align: center;
+    padding: 60px 20px;
 }
 
 .logo {
-  max-width: 120px;
-  margin-bottom: 20px;
+    width: 80px;
+    margin-bottom: 20px;
 }
 
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin: 10px 0;
 }
 
-h2 {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  color: #ccc;
+.tagline {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-bottom: 30px;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-bottom: 20px;
+.button-group {
+    margin-bottom: 30px;
 }
 
-.button {
-  background: #28a745;
-  color: white;
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  text-decoration: none;
-  transition: background 0.3s ease;
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
-.button:hover {
-  background: #1f7a33;
+.btn:hover {
+    background-color: #218838;
 }
 
 .quote {
-  font-style: italic;
-  font-size: 0.9rem;
-  color: #bbb;
-  margin-top: 15px;
+    font-style: italic;
+    color: #aaaaaa;
+    margin-top: 40px;
 }
 
 footer {
-  margin-top: 20px;
-  font-size: 0.8rem;
-  color: #777;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #666666;
 }
