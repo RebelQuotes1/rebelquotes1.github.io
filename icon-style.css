@@ -1,0 +1,25 @@
+
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.icon {
+  text-align: center;
+}
+.icon img {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 0 3px #00ffc3);
+  transition: transform 0.3s ease;
+}
+.icon img:hover {
+  transform: scale(1.1);
+}
+.icon p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ccc;
+}
