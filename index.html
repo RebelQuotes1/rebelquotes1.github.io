@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ROUGH GRIT</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="icon-style.css" />
@@ -11,52 +11,37 @@
     body {
       margin: 0;
       font-family: 'Orbitron', sans-serif;
-      background: #000 url('hero.jpg') no-repeat center top;
+      background: #000 url('fixed_homepage_logo.png') no-repeat center top;
       background-size: cover;
       text-align: center;
+      color: white;
     }
-
     .overlay {
       background: rgba(0, 0, 0, 0.6);
-      padding: 2rem 1rem 5rem;
+      padding: 2rem 1rem;
     }
-
-    h2 {
-      color: #00ffcc;
-      border: 2px solid #00ffcc;
+    .headline-title {
       display: inline-block;
-      padding: 0.5em 1em;
-      border-radius: 5px;
-      margin-bottom: 1em;
-    }
-
-    .icon-row {
-      max-width: 400px;
-      margin: 2rem auto;
-      display: block;
+      margin: 2rem auto 1rem;
+      padding: 0.5rem 2rem;
+      border: 2px solid #00ffcc;
+      color: #00ffcc;
+      font-weight: bold;
+      font-size: 1.25rem;
+      background-color: transparent;
     }
   </style>
 </head>
 <body>
   <div class="overlay">
-    <img src="rough_grit_logo_transparent.png" alt="ROUGH GRIT Logo" style="max-width: 300px;" />
     <p><em>Survive. Endure. Overcome.</em></p>
-    <div>
-      <a href="shop.html" class="button">Store</a>
-      <a href="blog.html" class="button">Blog</a>
-    </div>
+    <p><a href="shop.html">Store</a> <a href="blog.html">Blog</a></p>
+    <p>AD SPACE — Place your banner ad here</p>
 
-    <div class="ad-banner">AD SPACE — Place your banner ad here</div>
-
-    <img src="survival-icons-placeholder.png" alt="Survival Icons" class="icon-row" />
-
-    <h2>SURVIVAL HEADLINES</h2>
-    <div>
-      <p>🔧 Grid failure leaves thousands in the dark — would you be ready?</p>
-      <p>💡 New water filter tech tested in rural Alaska with great results.</p>
-    </div>
+    <div class="headline-title">SURVIVAL HEADLINES</div>
+    <p>🖋 Grid failure leaves thousands in the dark — would you be ready?</p>
+    <p>💡 New water filter tech tested in rural Alaska with great results.</p>
+    <footer style="margin-top: 2rem; font-size: 0.75rem;">© 2025 ROUGH GRIT. Built for the end times.</footer>
   </div>
-
-  <footer>© 2025 ROUGH GRIT. Built for the end times.</footer>
 </body>
 </html>
