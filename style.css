@@ -1,32 +1,60 @@
 
 body {
-  background: #111;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
   margin: 0;
-  padding: 0;
+  background: #1e1e1c url('https://www.transparenttextures.com/patterns/dark-wood.png');
+  color: #ddd;
+  font-family: 'Roboto Mono', monospace;
 }
+
 header {
-  padding: 20px;
+  background: #111;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 3px solid #444;
 }
-.subtitle {
-  color: #ccc;
+
+h1 {
+  font-family: 'Russo One', sans-serif;
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 2px;
 }
-.nav a {
-  color: #0ff;
-  margin: 0 10px;
+
+.tagline {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #bbb;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section {
+  background: #2c2c2a;
+  border: 2px solid #444;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+h2 {
+  font-family: 'Russo One', sans-serif;
+  color: #ffe600;
+}
+
+a {
+  color: #87cefa;
   text-decoration: none;
 }
-.ad-space {
-  margin: 20px auto;
-  padding: 10px;
-  border: 1px dashed #555;
-  max-width: 600px;
-  color: #888;
-}
-footer {
-  margin-top: 40px;
-  font-size: 0.8em;
-  color: #777;
+
+button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #ffe600;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
 }

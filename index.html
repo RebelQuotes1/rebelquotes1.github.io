@@ -3,118 +3,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ROUGH GRIT</title>
-  <style>
-    body {
-      background: #111;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-    }
-    .header {
-      background: linear-gradient(to right, #222, #000);
-      padding: 40px 20px;
-    }
-    .header h1 {
-      font-size: 3em;
-      letter-spacing: 2px;
-      margin: 0;
-    }
-    .header p {
-      font-style: italic;
-      font-size: 1.1em;
-      color: #aaa;
-    }
-    .gear-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin: 40px auto;
-      max-width: 900px;
-    }
-    .gear-item {
-      background: #1a1a1a;
-      border: 1px solid #333;
-      width: 280px;
-      padding: 15px;
-    }
-    .gear-item img {
-      width: 100%;
-      height: auto;
-    }
-    .gear-item a {
-      display: block;
-      color: #facc15;
-      font-weight: bold;
-      margin-top: 10px;
-      text-decoration: none;
-    }
-    .video-container {
-      margin-top: 30px;
-    }
-    iframe {
-      width: 320px;
-      height: 180px;
-      border: none;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 0.8em;
-      color: #777;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>ROUGH GRIT</h1>
+    <p class="tagline">Survive. Endure. Overcome.</p>
+  </header>
 
-<div class="header">
-  <h1>ROUGH GRIT</h1>
-  <p>Survive. Endure. Overcome.</p>
-</div>
+  <main>
+    <section class="feature">
+      <h2>⚙️ Featured Gear of the Day</h2>
+      <p><strong>Off-Grid Solar Charger</strong> – Keep your devices powered in the wild. <a href="#">Buy Now</a></p>
+    </section>
 
-<div class="gear-grid">
-  <div class="gear-item">
-    <img src="gear_images/tactical_flashlight.jpg" alt="Tactical Flashlight">
-    <a href="https://www.homedepot.com/p/NITECORE-4000-Lumens-USB-C-LED-Rechargeable-Tactical-Flashlight-P20iX/318571870" target="_blank">
-      🔦 NITECORE Tactical Flashlight
-    </a>
-  </div>
-  <div class="gear-item">
-    <img src="gear_images/survival_knife.jpg" alt="Survival Knife">
-    <a href="https://www.gerbergear.com/en-us/shop/knives/all-knives/gerber-ultimate-30-001829" target="_blank">
-      🔪 Gerber Survival Knife
-    </a>
-  </div>
-  <div class="gear-item">
-    <img src="gear_images/portable_water_filter.jpg" alt="Water Filter">
-    <a href="https://www.sawyer.com/product/mini-water-filtration-system-blue" target="_blank">
-      💧 Sawyer MINI Water Filter
-    </a>
-  </div>
-</div>
+    <section class="tip">
+      <h2>🔥 Survival Tip</h2>
+      <p>If it’s too quiet, you’re already being hunted.</p>
+    </section>
 
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/5O-DdRY3fdg" title="Survivorman"></iframe>
-</div>
+    <section class="reviews">
+      <h2>🪓 Top Reviews</h2>
+      <p>★★★★★ “Built like a damn tank.”</p>
+      <p>★★★★★ “Would trust it in a bear attack.”</p>
+    </section>
 
-<footer>
-  <p>© 2025 ROUGH GRIT. <em>Built for the end times.</em></p>
-</footer>
+    <section class="download">
+      <h2>📦 Free Gear Guide</h2>
+      <p>Drop your email below for a free Top 10 Tools PDF.</p>
+      <input type="email" placeholder="Enter your email">
+      <button>Unlock</button>
+    </section>
 
-
-  <div style="margin-top:40px;" class="card">
-    <h2>Ad Zone</h2>
-    <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-1532367766505583"
-      data-ad-slot="1234567890"
-      data-ad-format="auto"
-      data-full-width-responsive="true"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-
+    <section class="ads">
+      <h2>📋 Notices & Sponsors</h2>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1532367766505583"
+           data-ad-slot="1234567890"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </section>
+  </main>
 </body>
 </html>
