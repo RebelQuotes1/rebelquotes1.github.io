@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ROUGH GRIT</title>
+  <style>
+    body {
+      background: #111 url('background.jpg') repeat;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      padding: 20px;
+      background-color: #222;
+      font-size: 1.5em;
+    }
+    .subtitle {
+      color: #ccc;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    .nav {
+      margin: 10px 0;
+    }
+    .nav a {
+      color: #00f0ff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .ad-space {
+      border: 1px dashed #555;
+      padding: 10px;
+      margin: 20px auto;
+      width: 80%;
+      color: #888;
+    }
+    .headline-section {
+      margin: 30px auto;
+      max-width: 700px;
+      font-size: 1.1em;
+    }
+    .headline-section a {
+      color: #facc15;
+      text-decoration: none;
+    }
+    .gear-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px auto;
+      flex-wrap: wrap;
+    }
+    .gear-item {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      padding: 10px;
+      width: 300px;
+    }
+    .gear-item img {
+      width: 100%;
+      height: auto;
+    }
+    .gear-item span {
+      display: block;
+      margin-top: 10px;
+      color: #00f0ff;
+      font-weight: bold;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 700px;
+      margin: 40px auto;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .footer {
+      font-size: 0.8em;
+      color: #666;
+      margin: 40px 0 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">ROUGH GRIT</div>
+  <div class="subtitle">Survive. Endure. Overcome.</div>
+  <div class="nav">
+    <a href="#">Store</a> | <a href="#">Blog</a>
+  </div>
+
+  <div class="ad-space">AD SPACE — Place your banner ad here</div>
+
+  <div class="headline-section">
+    <div id="headline"></div>
+  </div>
+
+  <div class="gear-grid">
+    <div class="gear-item">
+      <a href="https://amzn.to/3UvySnK" target="_blank">
+        <img src="gear_images/tactical_flashlight.jpg" alt="Tactical Flashlight">
+        <span>Tactical Flashlight</span>
+      </a>
+    </div>
+    <div class="gear-item">
+      <a href="https://amzn.to/3JNz6Kg" target="_blank">
+        <img src="gear_images/survival_knife.jpg" alt="Survival Knife">
+        <span>Survival Knife</span>
+      </a>
+    </div>
+    <div class="gear-item">
+      <a href="https://amzn.to/3U5Ygyw" target="_blank">
+        <img src="gear_images/portable_water_filter.jpg" alt="Portable Water Filter">
+        <span>Portable Water Filter</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/geGv5nGudnE" 
+            title="Survivorman | Norway Part 1 | Les Stroud"
+            frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="footer">
+    © 2025 ROUGH GRIT. Built for the end times.<br/>
+    <span class="subtitle">Survive. Endure. Overcome.</span>
+  </div>
+
+  <script>
+    const headlines = [
+      '<a href="https://amzn.to/3TacticalFlash" target="_blank">🔦 Grid failure leaves thousands in the dark — would you be ready?</a>',
+      '<a href="https://amzn.to/3KnifeSurvival" target="_blank">🔪 Marine reveals what knife he trusts in a blackout.</a>',
+      '<a href="https://amzn.to/3WaterFilterAlaska" target="_blank">💧 New water filter tech tested in rural Alaska with great results.</a>',
+      '<a href="https://amzn.to/3SolarPanelSurvival" target="_blank">🔋 This solar panel saved a man’s life in the desert.</a>',
+      '<a href="https://amzn.to/3FireStarterExtreme" target="_blank">🔥 Firestarter lights even in a snowstorm.</a>'
+    ];
+    let index = 0;
+    const headlineEl = document.getElementById('headline');
+    function rotateHeadline() {
+      headlineEl.innerHTML = headlines[index];
+      index = (index + 1) % headlines.length;
+    }
+    rotateHeadline();
+    setInterval(rotateHeadline, 6000);
+  </script>
+</body>
+</html>
