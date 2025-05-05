@@ -42,21 +42,11 @@
     .headline-section {
       margin: 30px auto;
       max-width: 700px;
-    }
-    .headline-section h2 {
-      background: #00f0ff;
-      color: black;
-      padding: 10px 20px;
-      display: inline-block;
-      border-radius: 4px;
-      margin-bottom: 20px;
+      font-size: 1.1em;
     }
     .headline-section a {
-      display: block;
-      margin: 10px 0;
       color: #facc15;
       text-decoration: none;
-      font-size: 1em;
     }
     .gear-grid {
       display: flex;
@@ -81,6 +71,21 @@
       color: #00f0ff;
       font-weight: bold;
     }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 700px;
+      margin: 40px auto;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
     .footer {
       font-size: 0.8em;
       color: #666;
@@ -98,17 +103,7 @@
   <div class="ad-space">AD SPACE — Place your banner ad here</div>
 
   <div class="headline-section">
-    <h2>SURVIVAL HEADLINES</h2>
-    <a href="https://amzn.to/3UvySnK" target="_blank">⚡ Grid failure leaves thousands in the dark — would you be ready?</a>
-    <a href="https://amzn.to/3U5Ygyw" target="_blank">💧 New water filter tech tested in rural Alaska with great results.</a>
-    <a href="https://amzn.to/3JNz6Kg" target="_blank">🔪 Rambo-style survival knife now available for your bug-out bag.</a>
-    <a href="https://amzn.to/3U5Ygyw" target="_blank">🍲 Stock up on emergency food supplies before the next crisis hits.</a>
-    <a href="https://amzn.to/3U5Ygyw" target="_blank">☀️ Stay charged off-grid with this reliable solar power bank.</a>
-    <a href="https://amzn.to/3U5Ygyw" target="_blank">🩹 Comprehensive first aid kit essential for any emergency.</a>
-    <a href="https://amzn.to/3U5Ygyw" target="_blank">📻 Stay informed during disasters with this emergency radio.</a>
-    <a href="https://amzn.to/3U5Ygyw" target="_blank">🔥 Start fires effortlessly with this reliable fire starter kit.</a>
-    <a href="https://amzn.to/3U5Ygyw" target="_blank">🏕️ Lightweight and durable survival tent for any terrain.</a>
-    <a href="https://amzn.to/3U5Ygyw" target="_blank">🧵 Multi-functional paracord bracelet — a must-have survival tool.</a>
+    <div id="headline"></div>
   </div>
 
   <div class="gear-grid">
@@ -132,9 +127,33 @@
     </div>
   </div>
 
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/geGv5nGudnE" 
+            title="Survivorman | Norway Part 1 | Les Stroud"
+            frameborder="0" allowfullscreen></iframe>
+  </div>
+
   <div class="footer">
     © 2025 ROUGH GRIT. Built for the end times.<br/>
     <span class="subtitle">Survive. Endure. Overcome.</span>
   </div>
+
+  <script>
+    const headlines = [
+      '<a href="https://amzn.to/3TacticalFlash" target="_blank">🔦 Grid failure leaves thousands in the dark — would you be ready?</a>',
+      '<a href="https://amzn.to/3KnifeSurvival" target="_blank">🔪 Marine reveals what knife he trusts in a blackout.</a>',
+      '<a href="https://amzn.to/3WaterFilterAlaska" target="_blank">💧 New water filter tech tested in rural Alaska with great results.</a>',
+      '<a href="https://amzn.to/3SolarPanelSurvival" target="_blank">🔋 This solar panel saved a man’s life in the desert.</a>',
+      '<a href="https://amzn.to/3FireStarterExtreme" target="_blank">🔥 Firestarter lights even in a snowstorm.</a>'
+    ];
+    let index = 0;
+    const headlineEl = document.getElementById('headline');
+    function rotateHeadline() {
+      headlineEl.innerHTML = headlines[index];
+      index = (index + 1) % headlines.length;
+    }
+    rotateHeadline();
+    setInterval(rotateHeadline, 6000);
+  </script>
 </body>
 </html>
