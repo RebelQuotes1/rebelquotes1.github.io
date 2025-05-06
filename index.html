@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ROUGH GRIT</title>
   <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -11,39 +12,53 @@
   <header>
     <h1>ROUGH GRIT</h1>
     <p class="tagline">Survive. Endure. Overcome.</p>
+    <div class="promo-bar">🚨 Only the Prepared Survive — Stock Up Now</div>
   </header>
 
-  <section class="grid">
-    <div class="gear-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flashlight_icon.svg/240px-Flashlight_icon.svg.png" alt="Tactical Flashlight">
-      <h3>🔦 NITECORE Tactical Flashlight</h3>
-      <p><a href="#">Buy Now</a></p>
-      <p class="review">★★★★★ "Blinded a coyote. Saved my ass."</p>
+  <section class="gear-grid">
+    <div class="gear-item">
+      <h3>🎒 5.11 Tactical Bug Out Bag</h3>
+      <p><a href="#">Buy Now – $129</a></p>
     </div>
-    <div class="gear-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Knife_icon.svg/240px-Knife_icon.svg.png" alt="Survival Knife">
-      <h3>🗡️ Gerber Survival Knife</h3>
-      <p><a href="#">Buy Now</a></p>
-      <p class="review">★★★★★ "Split wood, skinned game, opened cans."</p>
+    <div class="gear-item">
+      <h3>⚡ Jackery Portable Power Station</h3>
+      <p><a href="#">Buy Now – $239</a></p>
     </div>
-    <div class="gear-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Water_icon.svg/240px-Water_icon.svg.png" alt="Water Filter">
-      <h3>💧 Sawyer MINI Water Filter</h3>
-      <p><a href="#">Buy Now</a></p>
-      <p class="review">★★★★★ "Drank from the Mississippi. Still breathing."</p>
+    <div class="gear-item">
+      <h3>📻 Midland Emergency Crank Radio</h3>
+      <p><a href="#">Buy Now – $79</a></p>
+    </div>
+    <div class="gear-item">
+      <h3>🔥 Solo Stove Lite Portable Campfire</h3>
+      <p><a href="#">Buy Now – $89</a></p>
+    </div>
+    <div class="gear-item">
+      <h3>🍖 3-Day MRE Supply Kit</h3>
+      <p><a href="#">Buy Now – $99</a></p>
+    </div>
+    <div class="gear-item">
+      <h3>🔦 Goal Zero Solar Lantern</h3>
+      <p><a href="#">Buy Now – $59</a></p>
     </div>
   </section>
 
   <section class="survival-tip">
     <h2>🔥 Survival Tip</h2>
-    <p id="tip">Never build your fire where you sleep. Sparks don’t care about comfort.</p>
+    <p id="tip"></p>
   </section>
 
-  <section class="pdf-cta">
-    <h2>📦 Free Survival Gear Guide</h2>
-    <p>Drop your email for the Top 10 Survival Tools PDF – no fluff, just gear.</p>
-    <input type="email" placeholder="Enter your email">
-    <button>Download</button>
+  <section class="blog-preview">
+    <h2>📰 Field Notes</h2>
+    <p><strong>“10 Ways to Start a Fire with No Lighter”</strong> — Read more...</p>
+    <p><strong>“How I Survived a Week With Just a Knife”</strong> — Read more...</p>
+  </section>
+
+  <section class="lead-capture">
+    <h2>📦 Free Gear PDF</h2>
+    <form action="https://formspree.io/f/mnqebzyv" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Download</button>
+    </form>
   </section>
 
   <section class="adsense">
@@ -60,7 +75,19 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 ROUGH GRIT – Built in the dirt, built to last.</p>
+    <p>&copy; 2025 ROUGH GRIT. Outlast. Outwork. Overcome.</p>
   </footer>
+
+  <script>
+    const tips = [
+      "Always carry duct tape. It's saved more lives than you’d think.",
+      "Pine sap is nature’s super glue and fire starter.",
+      "Three loud whistle blasts is the universal signal for help.",
+      "Never drink standing water unless you filter it twice.",
+      "Test your boots before the world tests your feet.",
+      "If it smells like almonds in the wild, walk the other way."
+    ];
+    document.getElementById("tip").innerText = tips[Math.floor(Math.random() * tips.length)];
+  </script>
 </body>
 </html>
