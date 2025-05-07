@@ -1,1 +1,0 @@
-// JavaScript for rotating headlines and blog teaser interactions
