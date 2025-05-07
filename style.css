@@ -1,0 +1,1 @@
+body { background: url('gritty-texture.jpg'); color: #eee; font-family: 'Orbitron', sans-serif; margin: 0; padding: 0; } header { background: #111; padding: 1em; text-align: center; font-size: 2em; } .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1em; padding: 1em; }

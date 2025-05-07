@@ -1,0 +1,1 @@
+document.getElementById('result').innerText = 'You bartered your last match for a vape cartridge.';
