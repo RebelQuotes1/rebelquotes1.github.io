@@ -1,1 +1,40 @@
-body { background: url('gritty-texture.jpg'); color: #eee; font-family: 'Orbitron', sans-serif; margin: 0; padding: 0; } header { background: #111; padding: 1em; text-align: center; font-size: 2em; } .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1em; padding: 1em; }
+
+body {
+    background: #111 url('gritty-texture.jpg') repeat;
+    color: #eee;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #000;
+    padding: 1em;
+    text-align: center;
+}
+nav a {
+    color: #0f0;
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+.quote-box {
+    background: #222;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+}
+.featured-gear {
+    text-align: center;
+    margin: 2em 0;
+}
+.download-cta {
+    background: #222;
+    padding: 1em;
+    margin: 1em auto;
+    text-align: center;
+}
+footer {
+    background: #000;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+}
