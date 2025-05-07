@@ -1,1 +1,0 @@
-// JS for rotating quotes, jokes, gear of the day, etc.
