@@ -1,0 +1,36 @@
+body {
+  background-color: #111;
+  color: #eee;
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+header {
+  background: #000;
+  padding: 20px;
+}
+nav a {
+  color: limegreen;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.intro {
+  padding: 40px 20px;
+}
+.download {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #222;
+  border: 1px solid #444;
+  color: yellow;
+  text-decoration: none;
+}
+footer {
+  margin-top: 50px;
+  padding: 10px;
+  font-size: 0.8em;
+  color: #999;
+}
