@@ -1,0 +1,60 @@
+body {
+  background: #111 url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+  font-family: 'Courier New', Courier, monospace;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: black;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
+}
+
+nav a {
+  color: #00ff00;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 2rem;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.gear-highlight {
+  background: #222;
+  margin: 2rem;
+  padding: 1rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+.gear-highlight h2 {
+  color: gold;
+}
+
+.pdf-offer {
+  margin: 2rem;
+  font-size: 1rem;
+}
+
+footer {
+  background: black;
+  color: #888;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
