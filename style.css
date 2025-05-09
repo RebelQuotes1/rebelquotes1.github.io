@@ -1,0 +1,41 @@
+
+body {
+  background: #1b1b1b url('bg-texture.jpg') repeat;
+  color: #e0e0e0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #101010;
+}
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: #f0c000;
+}
+.tagline {
+  font-style: italic;
+  color: #ccc;
+}
+.button {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background: #333;
+  color: #f0c000;
+  border: 1px solid #f0c000;
+  text-decoration: none;
+}
+main {
+  text-align: center;
+  padding: 2rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #101010;
+  color: #888;
+}
