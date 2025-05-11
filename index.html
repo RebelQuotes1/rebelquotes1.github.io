@@ -1,20 +1,144 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Rough Grit Blog</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rough Grit – Survival Done Right</title>
+  <meta name="description" content="Hardcore survival blog and gear store. Built for those who thrive in chaos.">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background-color: #111;
+      color: #ddd;
+      background-image: url('bg-texture.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header img {
+      max-height: 100px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff4444;
+      text-shadow: 0 0 10px #ff4444;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .button {
+      background-color: #222;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #444;
+    }
+
+    .quote-box {
+      margin: 2rem auto;
+      max-width: 500px;
+      background: #000;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid #555;
+    }
+
+    .raffle {
+      margin: 2rem auto;
+      max-width: 600px;
+      background: #000;
+      padding: 1.5rem;
+      text-align: center;
+      border: 1px solid #555;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .legal-links a {
+      color: #ccc;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+
+    .legal-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🪓 Rough Grit Survival Blog</h1>
-        <ul class="post-list">
-            <li><img src="icon-cold.png"> <a href="cold-survival.html">Top 10 Cold Survival Items</a></li>
-            <li><img src="icon-fire.png"> <a href="first-winter.html">My First Winter Off-Grid</a></li>
-            <li><img src="icon-gear.png"> <a href="top10-gear.html">Top 10 Pieces of Survival Gear</a></li>
-        </ul>
-        <p><a href="/">← Back to Homepage</a></p>
+  <header>
+    <img src="rough-grit-logo.png" alt="Rough Grit Logo"/>
+    <h1>Rough Grit</h1>
+    <p>Rough Gear for Rougher Times</p>
+  </header>
+
+  <nav>
+    <a href="store/index.html" class="button">Visit Gear Store</a>
+    <a href="blog/index.html" class="button">Read the Blog</a>
+    <a href="grit-test/index.html" class="button">Take the Grit Test</a>
+  </nav>
+
+  <div class="quote-box">
+    <p id="quote">Only the prepared survive.</p>
+  </div>
+
+  <div class="raffle">
+    <h3>🔥 Bug-Out Mystery Box Raffle</h3>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Enter Raffle</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2024 Serpico | Built for the Collapse</p>
+    <div class="legal-links">
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms</a> |
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
     </div>
+  </footer>
+
+  <script>
+    const quotes = [
+      "Only the prepared survive.",
+      "Comfort is a slow death.",
+      "You won't rise if you're soft.",
+      "Hope is not a plan.",
+      "Die young as late as possible."
+    ];
+    const quoteBox = document.getElementById("quote");
+    setInterval(() => {
+      const random = Math.floor(Math.random() * quotes.length);
+      quoteBox.textContent = quotes[random];
+    }, 4000);
+  </script>
 </body>
 </html>
+
