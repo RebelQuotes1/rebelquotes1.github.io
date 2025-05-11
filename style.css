@@ -2,8 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url('bg-texture.jpg') repeat;
-  background-color: #111;
+  background: #111;
   color: #eee;
   font-family: 'Share Tech Mono', monospace;
   text-align: center;
@@ -30,10 +29,11 @@ nav a:hover {
 }
 .quote-box {
   background: rgba(0,0,0,0.7);
-  padding: 1rem;
-  margin: 1rem auto;
+  padding: 1.2rem;
+  margin: 2rem auto;
   border: 1px solid #333;
   max-width: 600px;
+  font-style: italic;
 }
 .raffle-box {
   background: rgba(0,0,0,0.5);
