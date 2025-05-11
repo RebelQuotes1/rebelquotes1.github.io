@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Take the Grit Test</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <h1 class="rough-font">Take the Grit Test</h1>
+  <p id="result-box">Calculating your grit level...</p>
+  <script>
+    const results = [
+      "You thought MREs were a rap group. You're done.",
+      "You bartered your last match for a vape cartridge.",
+      "You asked a survivalist if they take Venmo. They took your boots instead.",
+      "You screamed 'Alexa, help' and a wild boar came. He wasn’t feeling it.",
+      "You survived, but your beard didn’t."
+    ];
+    document.getElementById("result-box").innerText = results[Math.floor(Math.random() * results.length)];
+  </script>
+  <a href="../index.html">← Back to Homepage</a>
+</body>
+</html>
