@@ -1,0 +1,27 @@
+
+body.bg {
+  background: url('https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 50px auto;
+  padding: 30px;
+  max-width: 800px;
+  border-radius: 10px;
+}
+a {
+  color: #f66;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1 {
+  font-size: 2.5rem;
+  color: #f33;
+}
