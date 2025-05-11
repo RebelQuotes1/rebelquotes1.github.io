@@ -2,7 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: url('https://www.transparenttextures.com/patterns/asfalt-light.png') repeat;
+  background: url('bg-texture.jpg') repeat;
+  background-color: #111;
   color: #eee;
   font-family: 'Share Tech Mono', monospace;
   text-align: center;
@@ -14,27 +15,28 @@ nav a {
   display: inline-block;
   margin: 0.5rem;
   padding: 0.5rem 1rem;
-  background: #333;
+  background: #222;
   color: white;
   text-decoration: none;
   border-radius: 4px;
 }
 nav a:hover {
-  background: #555;
+  background: #444;
 }
 .rough-font {
   font-size: 2.5rem;
   letter-spacing: 2px;
+  text-shadow: 1px 1px 4px #f00;
 }
 .quote-box {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.7);
   padding: 1rem;
   margin: 1rem auto;
-  border: 1px solid #444;
+  border: 1px solid #333;
   max-width: 600px;
 }
 .raffle-box {
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.5);
   margin-top: 2rem;
   padding: 1rem;
 }
